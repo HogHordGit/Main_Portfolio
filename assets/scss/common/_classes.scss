@@ -1,0 +1,26 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
+.wrapper {
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+.grid-container {
+  min-height: inherit;
+  display: grid;
+  grid-template-rows: 100vh auto auto;
+  grid-template-areas: "header" "main" "footer";
+}
+
+.-white-text {
+  color: #fff;
+}
+
+.-white-bg {
+  background-color: #fff;
+}
+
+.-active-btn:hover {
+  background-color: red;
+}

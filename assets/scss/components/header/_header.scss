@@ -1,0 +1,35 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
+.header {
+  grid-area: header;
+  background-image: url("../../../assets/img/bg.svg");
+  background-size: cover;
+  background-position: center center;
+}
+
+.header__container {
+  @extend %container;
+  position: relative;
+}
+
+//.header-blocks {
+//  position: absolute;
+//  display: flex;
+//  height: 100%;
+//  width: 100%;
+//
+//  &__first {
+//    height: 100%;
+//    width: 50%;
+//    background-color: #D7D7D7;
+//    //clip-path: polygon(0% 0%, 100% 0%, 85% 100%, 0% 100%);
+//  }
+//
+//  &__second {
+//    height: 100%;
+//    width: 57.5%;
+//    background-color: #000;
+//    //clip-path: polygon(13% 0%, 100% 0%, 100% 100%, 0% 100%);
+//  }
+//}

@@ -1,0 +1,9 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
+.main {
+  grid-area: main;
+  background-color: red;
+  width: 100%;
+  height: inherit;
+}
