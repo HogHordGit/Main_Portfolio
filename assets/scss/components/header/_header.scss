@@ -36,7 +36,11 @@
     font-size: 60px;
     font-family: "Raleway", system-ui;
     font-weight: bold;
-     line-height: 1em;
+    line-height: 1em;
+
+    @media (max-width: 1200px) {
+      font-size: 55px;
+    }
   }
 
   &__surname {
@@ -45,6 +49,10 @@
     font-weight: bold;
     line-height: 1em;
     margin-left: 30%;
+
+    @media (max-width: 1200px) {
+      font-size: 55px;
+    }
   }
 
   &__job {

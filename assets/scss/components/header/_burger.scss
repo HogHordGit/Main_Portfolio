@@ -1,0 +1,67 @@
+.burger-holder {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 50px;
+  position: absolute;
+  top: -50px;
+  width: 100%;
+
+  @media (max-width: 1050px) {
+    height: 60px;
+    background-color: #000;
+  }
+
+  &__menu {
+    display: none;
+    position: relative;
+    margin-right: 20px;
+    z-index: 50;
+    align-items: center;
+    justify-content: flex-end;
+    width: 30px;
+    height: 18px;
+
+    @media (max-width: 1050px) {
+      display: flex;
+    }
+  }
+
+  &__menu span {
+    height: 2px;
+    width: 80%;
+    transform: scale(1);
+    background-color: #fff;
+  }
+
+  &__menu::before, &__menu::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    transition: all .3s ease 0s;
+  }
+
+  &__menu::before {
+    top: 0;
+  }
+
+  &__menu::after {
+    bottom: 0;
+  }
+
+  &__menu.active span {
+    transform: scale(0);
+  }
+
+  &__menu.active::before {
+    top: 50%;
+    transform: rotate(-45deg) translate(0, -50%);
+  }
+
+  &__menu.active::after {
+    top: 50%;
+    transform: rotate(45deg) translate(0, -50%);
+  }
+}
