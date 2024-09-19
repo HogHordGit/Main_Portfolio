@@ -9,8 +9,9 @@
 .grid-container {
   min-height: inherit;
   display: grid;
-  grid-template-rows: 100vh auto auto;
+  grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas: "header" "main" "footer";
+  max-height: 1080px;
 }
 
 .-white-text {
