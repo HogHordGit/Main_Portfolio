@@ -2,8 +2,12 @@
 @use "../../mixins" as *;
 
 .main {
+  background-color: #d7d7d7;
   grid-area: main;
-  background-color: red;
   width: 100%;
   height: inherit;
+
+  &__about-container {
+    @extend %container;
+  }
 }
