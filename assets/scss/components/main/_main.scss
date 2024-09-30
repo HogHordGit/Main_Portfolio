@@ -7,7 +7,7 @@
   width: 100%;
   height: inherit;
 
-  &__about-container {
+  &__about-container, &__work-container, &__services-container, &__skills-container {
     @extend %container;
   }
 }
