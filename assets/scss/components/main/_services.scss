@@ -1,0 +1,29 @@
+.services {
+  padding: 0 0 40px 0;
+
+  &__holder {
+    display: flex;
+    gap: 40px;
+
+    @media (width < 600px) {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+}
+
+.services-dev, .services-main {
+  &__title {
+    font-size: 22px;
+  }
+
+  &__image {
+    position: absolute;
+
+    & {
+      position: relative;
+      top: 45px;
+      right: 40px;
+    }
+  }
+}

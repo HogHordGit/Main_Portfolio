@@ -1,0 +1,26 @@
+.work {
+  background-color: #1D1D1D;
+  padding: 50px 0;
+
+  &__title {
+    color: #fff;
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    color: #fff;
+  }
+
+  &__button {
+    margin-top: 40px;
+  }
+
+  &__btn {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-left: solid 2px #fff;
+    border-right: solid 2px #fff;
+    cursor: pointer;
+  }
+}

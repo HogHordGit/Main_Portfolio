@@ -2,15 +2,51 @@
 @use "../../mixins" as *;
 
 .about {
-  margin: 100px 0;
-  display: flex;
+  &__holder{
+    margin: 100px 0;
+    display: flex;
+    
+    @media (width < 900px) {
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+    }
+  }
+
+  &__surname, &__name {
+    font-size: 23px;
+    text-transform: uppercase;
+  }
+
+  &__icon {
+    padding-top: 5px;
+  }
+
+  &__position-content {
+    font-size: 31px;
+  }
 
   &__position {
     width: 40%;
+    
+    @media (width < 900px) {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__content {
     width: 60%;
+
+    @media (width < 900px) {
+      width: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__person {
@@ -24,11 +60,27 @@
   }
 
   &__content-sub {
-    margin-bottom: 20px;
+    margin-top: 37px;
+    font-size: 18px;
   }
 
   &__info {
     display: flex;
     justify-content: space-between;
+    margin-top: 27px;
+
+    @media (width < 900px) {
+      width: 100%;
+      justify-content: space-around;
+    }
   }
+}
+
+.born__title, .experience__title, .birth-date__title {
+  color: #E94D35;
+  font-size: 14px;
+}
+
+.born__main, .experience__main, .birth-date__main {
+  font-size: 23px;
 }

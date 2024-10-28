@@ -6,8 +6,8 @@
   grid-area: main;
   width: 100%;
   height: inherit;
+}
 
-  &__about-container, &__work-container, &__services-container, &__skills-container {
-    @extend %container;
-  }
+.work__container, .skills__container, .services__container, .about__container{
+  @extend %container;
 }

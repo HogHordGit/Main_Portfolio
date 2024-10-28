@@ -189,12 +189,12 @@
     display: flex;
     align-items: flex-end;
     height: 100%;
-    
+
     @media (max-width: 1050px) {
       right: 80%;
       left: 20%;
     }
-    
+
     @media (max-width: 600px) {
       left: 0;
       right: 100%;
@@ -203,7 +203,7 @@
 
   &__img {
     height: 85%;
-    
+
     @media (max-width: 1050px) {
       height: 90%;
     }
