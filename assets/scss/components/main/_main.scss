@@ -8,6 +8,6 @@
   height: inherit;
 }
 
-.work__container, .skills__container, .services__container, .about__container{
+.work__container, .skills__container, .services__container, .about__container, .portfolio__container{
   @extend %container;
 }

@@ -1,0 +1,51 @@
+.skills-usingnow {
+  &__content {
+    display: grid;
+    grid-template-rows: repeat(2, 200px);
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  &__title {
+    font-size: 30px;
+    font-weight: bold;
+  }
+}
+
+.skills-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &__img {
+    font-size: 90px;
+  }
+}
+
+.skills-learning {
+  &__content {
+    display: grid;
+    grid-template-rows: repeat(1, 200px);
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  &__title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 30px;
+  }
+}
+
+.skills-language {
+  &__content {
+    display: grid;
+    grid-template-rows: repeat(1, 200px);
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &__title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 30px;
+  }
+}

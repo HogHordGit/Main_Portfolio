@@ -27,6 +27,6 @@
     "sort-css-media-queries": "^2.0.4"
   },
   "dependencies": {
-    "bootstrap": "^5.3.3"
+    "bootstrap": "^3.4.1"
   }
 }
