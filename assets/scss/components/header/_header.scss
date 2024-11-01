@@ -52,6 +52,12 @@
     padding: 0 20px;
     gap: 100px;
   }
+  
+  @media (width < 400px) {
+    flex-direction: column;
+    gap: 0;
+    justify-content: space-between;
+  }
 
   &__info {
     @media (max-width: 1050px) {
@@ -131,6 +137,11 @@
   @media (max-width: 600px) {
     flex-direction: column;
     gap: 10px;
+  }
+  
+  @media (width < 400px) {
+    flex-direction: row;
+    justify-content: center;
   }
 
   &__btn {

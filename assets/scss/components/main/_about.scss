@@ -10,11 +10,12 @@
       flex-direction: column;
       align-items: center;
       gap: 40px;
+      margin: 50px 0;
     }
   }
 
   &__surname, &__name {
-    font-size: 23px;
+    font-size: 20px;
     text-transform: uppercase;
   }
 
@@ -24,6 +25,10 @@
 
   &__position-content {
     font-size: 31px;
+    
+    @media (width < 500px) {
+      font-size: 25px;
+    }
   }
 
   &__position {
@@ -33,7 +38,6 @@
       width: 100%;
       display: flex;
       flex-direction: column;
-      align-items: center;
     }
   }
 
@@ -53,6 +57,7 @@
     display: flex;
     gap: 10px;
     margin-bottom: 20px;
+    justify-content: center;
   }
 
   &__content-title {
@@ -68,11 +73,34 @@
     display: flex;
     justify-content: space-between;
     margin-top: 27px;
+    flex-wrap: wrap;
 
     @media (width < 900px) {
       width: 100%;
       justify-content: space-around;
     }
+
+    @media (width < 500px) {
+      display: grid;
+      grid-template-areas: "born exp"
+                           "b-date b-date";
+    }
+  }
+}
+
+.born {
+  grid-area: born;
+}
+
+.experience {
+  grid-area: exp;
+}
+
+.birth-date {
+  grid-area: b-date;
+
+  @media (width < 500px) {
+    margin: 30px auto 0 auto;
   }
 }
 
