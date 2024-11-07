@@ -9,11 +9,57 @@
     grid-template-rows: repeat(1, 1fr);
 
     gap: 20px;
+    
+    @media (width < 992px) {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+    }
   }
 
   &-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     height: 300px;
     box-shadow: 0 0 10px 3px gray;
+    background-image: url("../../../assets/img/portfolio/portfolio_site.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    gap: 20px;
+
+    &__back-color {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: #363636;
+      opacity: .6;
+      z-index: 0;
+    }
+
+    &__desc {
+      z-index: 999;
+      color: #fff;
+    }
+
+    &__git, &__site {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 33%;
+      height: 40px;
+      background-color: #494949;
+      z-index: 999;
+    }
+
+    &__git-btn, &__site-btn {
+      text-decoration: none;
+      color: #fff;
+      padding: 13px 20px;
+      z-index: 999;
+    }
   }
 }
