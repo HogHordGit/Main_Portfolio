@@ -214,6 +214,7 @@
 
   &__img {
     height: 85%;
+    min-height: 500px;
 
     @media (max-width: 1050px) {
       height: 90%;
