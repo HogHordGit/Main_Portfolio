@@ -45,4 +45,23 @@
   display: flex;
   gap: 30px;
   font-size: 30px;
+
+  &__btn {
+    text-decoration: none;
+    transition: background-color ease-out .2s;
+
+    @media (max-width: 600px) {
+      background-color: transparent;
+      box-shadow: none;
+    }
+  }
+
+  &__btn:hover {
+    background-color: #252525;
+  }
 }
+
+.c-white {
+  color: #fff;
+}
+

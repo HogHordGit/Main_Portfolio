@@ -2,10 +2,18 @@
 @use "../../mixins" as *;
 
 .about {
+  &__title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    font-size: 35px;
+  }
+
   &__holder{
     margin: 100px 0;
     display: flex;
-    
+
     @media (width < 900px) {
       flex-direction: column;
       align-items: center;

@@ -45,7 +45,17 @@
   }
 
   &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
+    transition: color ease-out .1s;
+    width: 200px;
+    height: 100%;
+  }
+
+  &__link:hover {
+    color: #000;
   }
 
   &__button {
@@ -74,6 +84,13 @@
 
   &__button:hover {
     background-color: #fff;
-    color: #000;
   }
+}
+
+.-black-text {
+  color: #000000;
+}
+
+.-white-text {
+  color: #fff;
 }

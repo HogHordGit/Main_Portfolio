@@ -6,6 +6,50 @@
   grid-area: main;
   width: 100%;
   height: inherit;
+
+  &__angle-up {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    right: 30px;
+    bottom: 30px;
+
+    width: 65px;
+    height: 65px;
+
+    transition: opacity 0.2s ease-in;
+
+    opacity: 0.4;
+    border-radius: 100%;
+    background-color: #3f3f3f;
+
+    font-size: 30px;
+
+    @include sm {
+      right: 20px;
+      bottom: 20px;
+
+      width: 60px;
+      height: 60px;
+    }
+
+    &:hover {
+      opacity: 1;
+      background-color: #1f1f1f;
+    }
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+
+    text-decoration: none;
+
+    color: #ffffff;
+  }
 }
 
 .work__container, .skills__container, .services__container, .about__container, .portfolio__container{
