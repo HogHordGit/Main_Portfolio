@@ -15,6 +15,7 @@
   &__holder {
     display: flex;
     justify-content: flex-end;
+    z-index: 999;
 
     @media (max-width: 1050px) {
       justify-content: center;
@@ -32,7 +33,7 @@
 
     @media (max-width: 1050px) {
       display: none;
-      height: calc(100% - 50px);
+      height: 250px;
       flex-direction: column;
       justify-content: flex-start;
       padding: 0;
