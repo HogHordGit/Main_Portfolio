@@ -2,16 +2,18 @@
 @use "../../mixins" as *;
 
 .about {
+  background-color: #fcfcfc;
+
   &__title {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 60px;
+    padding-top:60px;
     font-size: 35px;
   }
 
   &__holder{
-    margin: 100px 0;
+    padding: 100px 0;
     display: flex;
 
     @media (width < 900px) {
